@@ -34,7 +34,7 @@ function App() {
         formData.append('textureType', type); // Append the texture type (e.g., countertop, backsplash, wall)
   
         // Send the POST request to the backend
-        const response = await axios.post('http://localhost:5000/api/process-image', formData, {
+        const response = await axios.post('http://145.223.75.201:7077/api/process-image', formData, {
           headers: {
             'Content-Type': 'multipart/form-data', // Set the content type to multipart/form-data
           },
